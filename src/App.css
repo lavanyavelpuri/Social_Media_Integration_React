@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 50%;
+  padding: 5.5em 4em;
+  margin-left: 25%;
+  margin-top: 4%;
+  box-shadow: 0px 0px 20px 00px rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+.logo {
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 40px;
+  margin-left: -15px;
+  z-index: 1;
+}
+.main .logo_name {
+  position: relative;
+  margin-top: -4.7em;
+  margin-left: 2.2em;
+  font-weight: 900;
+  font-size: 1.15em;
+  background-image: linear-gradient(45deg, rgb(248, 135, 6) 0%, rgb(250, 55, 20) 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+.main1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.85em;
+}
+.sub_main {
+  width: 50%;
+  margin-left: 25%;
+  padding: 5.5em 4em;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_main h5 {
+  margin-bottom: 1em;
+  animation-duration: 4s; 
+}
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.img_section {
+  width: 30%;
+  margin:0;
+  padding: 0;
+  margin-left: -2em;
+}
+.img_section img{
+  width: 25vw;
+  object-fit: cover;
+}
+.login_buttons {
+  width: 60%;
+  height: 300px;
+  margin-left: 9em;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.card_pattern {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+}
+.card .pro_pic {
+  border-radius: 100%;
+  margin-top : -2.5em;
+  margin-left: 5.9em;
+}
+.card h4 {
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 3em;
+}
+.card h6 {
+  text-align: center;
+  color: gray;
+  line-height: 2em;
+  font-weight: 700;
+  font-size: .7em;
+}
+.signout {
+  margin-top: 1.5em;
+  display: block;
+  padding: .5em 4.1em;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-family: sans-serif;
+  background: linear-gradient(45deg, rgb(248, 135, 6) 0%, rgb(253, 119, 29) 100%);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s ease;
+  
+}
+.signout:hover {
+  background: linear-gradient(45deg, white 0%, white 100%);
+  border: 1px solid rgb(253, 119, 29);
+  color: rgb(253, 119, 29);
+  font-weight: 500;
+}
+form input {
+  color: black;
+  font-family: sans-serif;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid rgb(216, 143, 6);
+  line-height: 2.5em;
+}
+form input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(253, 119, 29);
+}
+.login_buttons h6 {
+  color: grey;
+  font-size: 10px;
+  margin-bottom: 0;
+  font-family: sans-serif;
+}
+form button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  display: block;
+  padding: .5em 4.1em;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: sans-serif;
+  background: linear-gradient(45deg, rgb(248, 135, 6) 0%, rgb(253, 119, 29) 100%);
+  cursor: pointer;
+  border-radius: 1px;
+  text-align: center;
+  font-weight: 500;
+}
+/* medium screens */
+
+@media screen and (max-width: 1050px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .img_section {
+    margin-left: -2em;
+    margin-top: 2em;
+  }
+  .main {
+    height: 80%;
+  }
+  .main .logo_name {
+    margin-top: -4.28em;
+    margin-left: 1.8em;
+    font-weight: 900;
+    font-size: 1.15em;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main1 {
+    width: 85%;
+  }
+  .img_section {
+    margin-left: -3em;
+  }
+  form button {
+    padding: .5em 3.3em;
+  }
+}
+@media screen and (max-width: 790px) {
+  .main1 {
+    width: 50%;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main {
+    height: 110%;
+    margin-top: 7%;
+  }
+  .img_section img {
+    width: 33vw;
+    margin-top: 2em;
+    margin-left: -2em; 
+  }
+  .login_buttons {
+    margin-top: 3.5em;
+    width: 50vw;
+    align-items: center;
+  }
+  form button {
+    padding: .5em 4.6em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main .logo_name {
+    color: greenyellow;
+  }
+  .main {
+    width: 50%;
+    /* margin-left: 4.5em; */
+  }
+  .login_buttons {
+    margin-right: 25%;
+  }
+  .img_section img {
+    width: 35vw;
+    margin-top: 2em;
+    margin-left: -2em; 
+  }
+  .signout {
+    padding: .5em 3.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    width: 60%;
+    margin-left: 6em;
+  }
+  .img_section img {
+    width: 45vw;
+    margin-top: 2em;
+    margin-left: -3em; 
+  }
+  .login_buttons {
+    margin-right: 38%;
+  }
+  .signout {
+    padding: 5px 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    width: 70%;
+    margin-left: 4.5em;
+  }
+  .img_section img {
+    width: 45vw;
+    margin-top: 2em;
+    margin-left: -2em; 
+  }
+  .signout {
+    padding: 5px 20px;
+    font-weight: 300;
+  }
+  .signout:hover {
+    font-weight: 300;
+  }
+}
+
